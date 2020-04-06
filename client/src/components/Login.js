@@ -70,6 +70,7 @@ const Login = () => {
     const showLoginPage = () => (
         <div className="body">
             <Menu />
+            <h1>Login</h1>
             <div className="login-page">
                 <div className="form">
                     <form className="login-form" >

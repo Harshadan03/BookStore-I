@@ -52,6 +52,7 @@ const Register = () => {
     const registerForm = () => (
         <div className="body">
             <Menu />
+            <h1>Register</h1>
             <div className="login-page">
                 <div className="form">
                     <form className="register-form">

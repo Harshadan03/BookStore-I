@@ -28,6 +28,7 @@ const Books = () => {
     return (
         <div className="body">
             <Menu />
+            <h1>Books</h1>
             <div className="ml-5 mb-5 mt-5 ">
                 <Link to="/addbook">
                     <button className="btn btn-success">Add A New Book</button>
