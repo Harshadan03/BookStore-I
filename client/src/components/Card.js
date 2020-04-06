@@ -14,7 +14,7 @@ const Card = ({ book }) => {
 
                 <ShowImage item={book} url="Book" />
                 <p className="card-p  mt-2 black-10">{`${book.description.substring(0, 30)}...`} </p>
-                <p className="card-p  mt-2 black-9">Writer:{book.author} </p>
+                <p className="card-p  mt-2 black-9">Author :{book.author} </p>
                 <p className="black-8">Added on {moment(book.createdAt).fromNow()}</p>
                 <br />
                 <Link to={`/book/${book._id}`} className="mr-2">

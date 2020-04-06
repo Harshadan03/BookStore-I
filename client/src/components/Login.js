@@ -70,6 +70,8 @@ const Login = () => {
     const showLoginPage = () => (
         <div className="body">
             <Menu />
+            {showError()}
+            {showLoading()}
             <h1>Login</h1>
             <div className="login-page">
                 <div className="form">
@@ -89,8 +91,7 @@ const Login = () => {
 
     return (
         <Fragment>
-            {showError()}
-            {showLoading()}
+
             {showLoginPage()}
             {redirectUser()}
         </Fragment>

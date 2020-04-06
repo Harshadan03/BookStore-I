@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import Menu from './Menu'
 import { isAuthenticated, createbook } from '../auth'
+import { Link } from 'react-router-dom'
 
 const AddBook = () => {
 
@@ -86,6 +87,10 @@ const AddBook = () => {
     const bookForm = () => (
         <div className="body">
             <Menu />
+            {showLoading()}
+            {showError()}
+            {showSuccess()}
+
             <div className="login-page">
                 <div className="form">
                     <form className="register-form" onSubmit={clickSubmit}>
@@ -107,9 +112,7 @@ const AddBook = () => {
 
     return (
         <Fragment>
-            {showLoading()}
-            {showError()}
-            {showSuccess()}
+
             {bookForm()}
         </Fragment>
     )

@@ -39,7 +39,7 @@ const Book = props => {
 
                     <ShowImage item={book} url="Book" />
                     <p className="card-p  mt-2 black-10">{book.description} </p>
-                    <p className="card-p  mt-2 black-9">Writer:{book.author} </p>
+                    <p className="card-p  mt-2 black-9">Author :{book.author} </p>
                     <p className="black-8">Added on {moment(book.createdAt).fromNow()}</p>
 
                 </div>
